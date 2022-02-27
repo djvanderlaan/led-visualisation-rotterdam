@@ -15,7 +15,7 @@
 // 3 = SunsetDark
 // 4 = ag_GrnYl
 // 5 = Zissou 1
-const int palette_num = 0;
+const int palette_num = 1;
 const int palette_size = 8*2*4;
 
 const uint8_t palette[] PROGMEM = { 
@@ -126,24 +126,24 @@ const uint8_t palette[] PROGMEM = {
 // =================================================================
 // DATASETS
 //
-const int data_size = 25;
+const int data_size = 25+12;
 const int ndatasets = 3;
 const uint8_t data[] PROGMEM = { 
   // dataset 0 = reference dataset with uniform colour and therefore 
   // not an actual dataset
   0, 1, 2, 3, 4, 5, 6, 7, 7, 7,
   7, 7, 7, 7, 7, 7, 7, 7, 7, 7,
-  7, 7, 7, 7, 7,
+  7, 7, 7, 7, 7,     1,1,1,1,1,1,1,1,1,1,1,1,
   // dataset 1: bedrijven per km2 2020
-  4, 5, 6, 6, 12, 6, 1, 15, 13, 1, 3, 3, 5, 2, 1, 11, 10, 0, 2, 0, 1, 0, 0, 0, 0,
+  4, 5, 6, 6, 12, 6, 1, 15, 13, 1, 3, 3, 5, 2, 1, 11, 10, 0, 2, 0, 1, 0, 0, 0, 0, 0,0,0,0,0,0,1,2,3,4,5,6,
   // dataset 2
   0, 7, 3, 2, 4, 5, 1, 0, 1, 7,
   0, 7, 3, 2, 4, 5, 1, 0, 1, 4,
-  6, 4, 7, 4, 4,
+  6, 4, 7, 4, 4,     1,1,1,1,1,1,1,1,1,1,1,1,
   // dataset 3
   0, 7, 3, 2, 4, 5, 1, 0, 1, 7,
   0, 7, 3, 2, 4, 5, 1, 0, 1, 4,
-  6, 4, 7, 4, 4
+  6, 4, 7, 4, 4,       1,1,1,1,1,1,1,1,1,1,1,1
   };
 
 // =================================================================
@@ -193,7 +193,7 @@ void display_data(int dataset) {
     Serial.print("display_data(): showing dataset ");
     Serial.println(dataset);
 #endif
-    flashled::show_data(data+(dataset)*data_size, palette + palette_num*palette_size, 25);
+    flashled::show_data(data+(dataset)*data_size, palette + palette_num*palette_size, data_size);
   }
 }
 
