@@ -236,7 +236,8 @@ unique(quantile(dta[[var]], seq(0, 1, length.out = ncol+1), na.rm = TRUE))*100
 # linear breaks
 seq(min(dta[[var]], na.rm=TRUE), max(dta[[var]], na.rm = TRUE), length.out = 8)*100
 breaks <- c(-9, -6.5, -4, -1.5, 1.5, 4, 6.5, 9)/100
-cat <- length(breaks) - as.numeric(cut(dta[[var]], breaks))
+# WHY? cat <- length(breaks) - as.numeric(cut(dta[[var]], breaks))
+cat <- as.numeric(cut(dta[[var]], breaks))
 cat[is.na(cat)] <- ncol+1
 # Print data for arduino
 m <- match(mapping$wk_code, dta$WK_CODE)
@@ -248,6 +249,7 @@ writeLines(c(
 # example map
 example_map(dta, cat, pal_name = pal_name)
 example_map(dta, cat, pal_name = "Zissou 1")
+example_map(dta, cat, pal_name = "Fall")
 
 
 # VAR
@@ -276,7 +278,7 @@ var <- "jongeren"
 unique(quantile(dta[[var]], seq(0, 1, length.out = ncol+1), na.rm = TRUE))
 # linear breaks
 seq(min(dta[[var]], na.rm=TRUE), max(dta[[var]], na.rm = TRUE), length.out = 8)
-breaks <- c(0, 25, 26, 27, 28, 30, 31, 34)
+breaks <- c(0, 22, 24, 26, 28, 30, 32, 34)
 cat <- as.numeric(cut(dta[[var]], breaks))
 cat[is.na(cat)] <- ncol+1
 # Print data for arduino
