@@ -79,6 +79,9 @@ The visualisation is controlled by an Arduino Uno. All data is in the RAM of Uno
 ![test](images/achterkant_small.jpg)
 
 
+## Software
+
+Code was written in the Arduino IDE. Models were made with R, OpenSCAD and FreeCAD. Data for uploading to the Arduino was prepared using R.
 
 ## Licence
 
