@@ -88,6 +88,8 @@ Code was written in the Arduino IDE. Models were made with R, OpenSCAD and FreeC
 
 [ntteloos.nl/rotterdam](https://ntteloos.nl/rotterdam)
 
+[3D-models kan be found on Printables](https://www.printables.com/model/397711-led-visualisation-of-rotterdam).
+
 ## Licence
 
 The code and models in this repository are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
