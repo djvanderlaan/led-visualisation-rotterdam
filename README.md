@@ -83,6 +83,10 @@ The visualisation is controlled by an Arduino Uno. All data is in the RAM of Uno
 
 Code was written in the Arduino IDE. Models were made with R, OpenSCAD and FreeCAD. Data for uploading to the Arduino was prepared using R.
 
+## Also see
+
+[ntteloos.nl/rotterdam](https://ntteloos.nl/rotterdam)
+
 ## Licence
 
 The code and models in this repository are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
