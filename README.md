@@ -1,7 +1,8 @@
 # LED Visualisation of Rotterdam
 
+The visualisation consists of a number of 3D-printed 'light boxes' for each of the districts in the municipality of Rotterdam in The Netherlands. By inserting punch cards into the model, users are able to select different datasets for the visualisation. This was built as a prototype. The goal is invite users to look and play with statistical data.
 
-The visualisation consists of a number of 3D-printed 'light boxes' for each of the districts in the municipality of Rotterdam in The Netherlands. Using a map of all districts in The Netherlands ([CBS and Kadaster](https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2020)), the districts of Rotterdam were selected and each district was scaled and written to SVG-file. These were converted to 3D-models using OpenSCAD. The boxes were printed in white PLA and the covers were printed in transparent PLA. Holes were drilled in the back for the LEDS (took some experimenting to find the correct number and positions). The boxes were attached to each other using a 3D-printing pen and were attached to a muliplex board. 
+Using a map of all districts in The Netherlands ([CBS and Kadaster](https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2020)), the districts of Rotterdam were selected and each district was scaled and written to SVG-file. These were converted to 3D-models using OpenSCAD. The boxes were printed in white PLA and the covers were printed in transparent PLA. Holes were drilled in the back for the LEDS (took some experimenting to find the correct number and positions). The boxes were attached to each other using a 3D-printing pen and were attached to a muliplex board. 
 
 
 ![test](images/uit_small.jpg)
